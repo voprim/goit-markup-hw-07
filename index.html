@@ -16,21 +16,27 @@
     <!-- навигация в верху страницы-->
     <header class="header-section">
       <div class="container">
-        <nav class="nav-logo">
-          <a href="./index.html" class="logo-link"
-            ><span class="logo-link-part">Web</span>Studio</a
+        <nav class="site-nav">
+          <a href="./index.html" class="logo-link logo-link--header"
+            ><span class="logo-link__part">Web</span>Studio</a
           >
-          <ul class="nav-header">
-            <li><a href="" class="nav-header-item current">Студия</a></li>
-            <li>
-              <a href="./portfolio.html" class="nav-header-item">Портфолио</a>
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a href="" class="nav-list__link nav-list__link--current"
+                >Студия</a
+              >
             </li>
-            <li><a href="" class="nav-header-item">Контакты</a></li>
+            <li class="nav-list__item">
+              <a href="./portfolio.html" class="nav-list__link">Портфолио</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="" class="nav-list__link">Контакты</a>
+            </li>
           </ul>
-          <ul class="header-contacts">
-            <li>
-              <a href="mailto:info@devstudio.com" class="header-contacts-item">
-                <svg class="icon-mail" width="16" height="12">
+          <ul class="contacts-list">
+            <li class="contacts-list__item">
+              <a href="mailto:info@devstudio.com" class="contacts-list__link">
+                <svg class="contacts-list__icon-mail" width="16" height="12">
                   <use
                     href="./images/icons/symbol-defs.svg#icon-envelope"
                   ></use>
@@ -38,9 +44,13 @@
                 info@devstudio.com</a
               >
             </li>
-            <li>
-              <a href="tel:+380961111111" class="header-contacts-item">
-                <svg class="icon-smartphone" width="10" height="16">
+            <li class="contacts-list__item">
+              <a href="tel:+380961111111" class="contacts-list__link">
+                <svg
+                  class="contacts-list__icon-smartphone"
+                  width="10"
+                  height="16"
+                >
                   <use
                     href="./images/icons/symbol-defs.svg#icon-smartphone"
                   ></use>
@@ -114,7 +124,9 @@
               <label class="form-confirm">
                 <input type="checkbox" name="confirm" class="visually-hidden" />
                 <span class="other-checkbox"></span>
-                <span class="confirm-text">Соглашаюсь с рассылкой и принимаю</span>
+                <span class="confirm-text"
+                  >Соглашаюсь с рассылкой и принимаю</span
+                >
                 <a href="#">Условия договора</a>
               </label>
 
@@ -467,8 +479,8 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-contacts-wrapper">
-          <a href="./index.html" class="logo-link-footer"
-            ><span class="logo-link-part">Web</span>Studio</a
+          <a href="./index.html" class="logo-link logo-link--footer"
+            ><span class="logo-link__part">Web</span>Studio</a
           >
           <address>
             <p class="footer-location-text">г. Киев, пр-т Леси Украинки, 26</p>
@@ -483,7 +495,7 @@
         <div class="footer-join">
           <h3>Присоединяйтесь</h3>
           <ul class="footer-social-list">
-            <li class="footer-social-item">
+            <li>
               <a href="#" class="footer-social-link">
                 <svg width="44" height="44">
                   <use
@@ -492,7 +504,7 @@
                 </svg>
               </a>
             </li>
-            <li class="footer-social-item">
+            <li>
               <a href="#" class="footer-social-link">
                 <svg width="44" height="44">
                   <use
@@ -501,7 +513,7 @@
                 </svg>
               </a>
             </li>
-            <li class="footer-social-item">
+            <li>
               <a href="#" class="footer-social-link">
                 <svg width="44" height="44">
                   <use
@@ -510,7 +522,7 @@
                 </svg>
               </a>
             </li>
-            <li class="footer-social-item">
+            <li>
               <a href="#" class="footer-social-link">
                 <svg width="44" height="44">
                   <use
