@@ -1,16 +1,16 @@
-.advantages-section {
+.advantages {
   padding-top: 107px;
-}
-
-.advantages-list {
-  display: flex;
-  justify-content: space-between;
-
-  &__item:not(:last-child) {
-    margin-right: 30px;
+  
+  &__list {
+    display: flex;
+    justify-content: space-between;
   }
 
-  &__icon-wrapper {
+  &__item:not(:last-child) {
+  margin-right: 30px;
+  }
+
+  &__box {
     height: 120px;
     padding: 25px 100px;
     margin-bottom: 30px;
@@ -19,13 +19,13 @@
     border-radius: 4px;
   }
 
-  &__icon {
+   &__icon {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
-  &__title {
+ &__title {
     margin-bottom: 10px;
 
     font-weight: bold;
@@ -44,3 +44,5 @@
     color: var(--text-main-color);
   }
 }
+
+

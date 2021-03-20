@@ -49,8 +49,11 @@
   color: var(--text-white-color);
 }
 
-.footer-social-list {
-  display: flex;
+.footer-social {
+
+  &__list {
+    display: flex;
+  }
 
   &__item:not(:last-child) {
     margin-right: 10px;

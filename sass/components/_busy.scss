@@ -1,17 +1,17 @@
-.busy-section {
+.busy {
   padding-top: 94px;
   padding-bottom: 94px;
-}
 
-.busy-list {
-  z-index: 2;
-  display: flex;
-  justify-content: space-between;
+  &__list {
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+  }
 
   &__item {
     position: relative;
   }
-
+  
   &__item:not(:last-child) {
     margin-right: 30px;
   }

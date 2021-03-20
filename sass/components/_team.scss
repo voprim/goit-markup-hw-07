@@ -1,14 +1,14 @@
-.team-section {
+.team {
   background-color: var(--background-light);
 
   &__wrapper {
     padding-top: 94px;
     padding-bottom: 94px;
   }
-}
 
-.team-list {
+  &__list {
   display: flex;
+  }
 
   &__item {
     border-bottom-left-radius: 4px;
@@ -21,7 +21,7 @@
     margin-right: 30px;
   }
 
-  &__text {
+  &__box {
     padding: 30px;
   }
 
@@ -46,10 +46,14 @@
     letter-spacing: 0.03em;
     color: var(--text-main-color);
   }
+
 }
 
-.social-list {
-  display: flex;
+.social {
+
+  &__list {
+    display: flex;
+  }
 
   &__item {
     display: flex;

@@ -358,7 +358,7 @@ summary {
   overflow: hidden;
 }
 
-.header-section {
+.page-header {
   border-bottom: 1px solid #ececec;
 }
 
@@ -695,7 +695,7 @@ summary {
   margin-right: 4px;
 }
 
-.tagline-section {
+.tagline {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -710,7 +710,7 @@ summary {
   text-align: center;
 }
 
-.tagline-section__title {
+.tagline__title {
   width: 696px;
   margin-left: auto;
   margin-right: auto;
@@ -722,7 +722,7 @@ summary {
   color: var(--text-white-color);
 }
 
-.tagline-section__btn {
+.tagline__btn {
   display: inline-block;
   margin-top: 30px;
   padding: 10px 28px;
@@ -736,15 +736,15 @@ summary {
   border-radius: 4px;
 }
 
-.tagline-section__btn:hover {
+.tagline__btn:hover {
   cursor: pointer;
 }
 
-.advantages-section {
+.advantages {
   padding-top: 107px;
 }
 
-.advantages-list {
+.advantages__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -753,11 +753,11 @@ summary {
           justify-content: space-between;
 }
 
-.advantages-list__item:not(:last-child) {
+.advantages__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.advantages-list__icon-wrapper {
+.advantages__box {
   height: 120px;
   padding: 25px 100px;
   margin-bottom: 30px;
@@ -765,13 +765,13 @@ summary {
   border-radius: 4px;
 }
 
-.advantages-list__icon {
+.advantages__icon {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.advantages-list__title {
+.advantages__title {
   margin-bottom: 10px;
   font-weight: bold;
   font-size: 14px;
@@ -781,19 +781,19 @@ summary {
   color: var(--text-bold-color);
 }
 
-.advantages-list__text {
+.advantages__text {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--text-main-color);
 }
 
-.busy-section {
+.busy {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.busy-list {
+.busy__list {
   z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -803,15 +803,15 @@ summary {
           justify-content: space-between;
 }
 
-.busy-list__item {
+.busy__item {
   position: relative;
 }
 
-.busy-list__item:not(:last-child) {
+.busy__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.busy-list__text {
+.busy__text {
   z-index: 2;
   position: absolute;
   bottom: 0;
@@ -828,36 +828,36 @@ summary {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.team-section {
+.team {
   background-color: var(--background-light);
 }
 
-.team-section__wrapper {
+.team__wrapper {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.team-list {
+.team__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.team-list__item {
+.team__item {
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   background-color: var(--background-white);
 }
 
-.team-list__item:not(:last-child) {
+.team__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.team-list__text {
+.team__box {
   padding: 30px;
 }
 
-.team-list__name {
+.team__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
@@ -866,7 +866,7 @@ summary {
   color: var(--text-bold-color);
 }
 
-.team-list__position {
+.team__position {
   margin-top: 10px;
   margin-bottom: 16px;
   font-weight: normal;
@@ -877,13 +877,13 @@ summary {
   color: var(--text-main-color);
 }
 
-.social-list {
+.social__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.social-list__item {
+.social__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -895,11 +895,11 @@ summary {
           align-items: center;
 }
 
-.social-list__item:not(:last-child) {
+.social__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.social-list__link {
+.social__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -917,32 +917,32 @@ summary {
   transition: background-color 250ms var(--func-cubic), color 250ms var(--func-cubic);
 }
 
-.social-list__link:hover, .social-list__link:focus {
+.social__link:hover, .social__link:focus {
   background-color: var(--link-hover-color);
   color: var(--text-white-color);
 }
 
-.social-list__icon {
+.social__icon {
   fill: currentColor;
 }
 
-.regular-customers__wrapper {
+.customers__wrapper {
   padding-top: 94px;
   padding-bottom: 94px;
   color: #afb1b8;
 }
 
-.regular-customers__list {
+.customers__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.regular-customers__item:not(:last-child) {
+.customers__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.regular-customers__link {
+.customers__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -961,13 +961,13 @@ summary {
   transition: color 250ms var(--func-cubic), border 250ms var(--func-cubic);
 }
 
-.regular-customers__icon {
-  fill: currentColor;
-}
-
-.regular-customers__link:hover, .regular-customers__link:focus {
+.customers__link:hover, .customers__link:focus {
   color: var(--link-hover-color);
   border: 1px solid var(--link-hover-color);
+}
+
+.customers__icon {
+  fill: currentColor;
 }
 
 .footer {
@@ -1019,17 +1019,17 @@ summary {
   color: var(--text-white-color);
 }
 
-.footer-social-list {
+.footer-social__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.footer-social-list__item:not(:last-child) {
+.footer-social__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.footer-social-list__link {
+.footer-social__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1048,12 +1048,12 @@ summary {
   transition: background-color 250ms var(--func-cubic), color 250ms var(--func-cubic);
 }
 
-.footer-social-list__link:hover, .footer-social-list__link:focus {
+.footer-social__link:hover, .footer-social__link:focus {
   background-color: var(--link-hover-color);
   color: var(--text-white-color);
 }
 
-.footer-social-list__icon {
+.footer-social__icon {
   fill: currentColor;
 }
 
@@ -1130,7 +1130,7 @@ summary {
   padding-bottom: 94px;
 }
 
-.portfolio-button {
+.filters__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1140,11 +1140,11 @@ summary {
   margin-bottom: 50px;
 }
 
-.portfolio-button__item:not(:last-child) {
+.filters__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.portfolio-button__btn {
+.filters__btn {
   padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
@@ -1159,21 +1159,14 @@ summary {
   transition: background-color 250ms var(--func-cubic), color 250ms var(--func-cubic);
 }
 
-.portfolio-button__btn:hover {
+.filters__btn:hover, .filters__btn:focus {
   background-color: var(--link-hover-color);
   color: var(--text-white-color);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-button__btn:focus {
-  background-color: var(--link-hover-color);
-  color: var(--text-white-color);
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.card-set {
+.cards__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1183,12 +1176,11 @@ summary {
   margin-top: calc(-1 * var(--card-set-gap));
 }
 
-.card-set__item {
+.cards__item {
   -ms-flex-preferred-size: calc(100% / 3 - var(--card-set-gap));
       flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
-  border: 1px solid #eeeeee;
 }
 
 .card__link {
@@ -1198,13 +1190,7 @@ summary {
   transition: box-shadow 250ms var(--func-cubic), -webkit-box-shadow 250ms var(--func-cubic);
 }
 
-.card__link:hover {
-  display: inline-block;
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.card__link:focus {
+.card__link:hover, .card__link:focus {
   display: inline-block;
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1219,6 +1205,7 @@ summary {
 
 .card__thumb {
   position: relative;
+  overflow: hidden;
 }
 
 .card__text-overlay {
@@ -1244,6 +1231,7 @@ summary {
 
 .card__text-wrapper {
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
 
 .card__title {
