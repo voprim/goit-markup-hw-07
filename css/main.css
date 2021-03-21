@@ -334,7 +334,7 @@ summary {
   margin-right: auto;
 }
 
-.section-title {
+.section__title {
   margin-bottom: 50px;
   font-weight: bold;
   font-size: 36px;
@@ -986,15 +986,19 @@ summary {
 }
 
 .footer-container__address {
+  margin-bottom: 9px;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--text-white-color);
 }
 
+.footer-container__item {
+  margin-top: 9px;
+}
+
 .footer-container__contacts {
   display: block;
-  margin-top: 9px;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
@@ -1239,7 +1243,7 @@ summary {
   font-weight: bold;
   font-size: 18px;
   line-height: 36px;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.03em;
   color: var(--text-bold-color);
 }
 
